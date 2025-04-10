@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MultiBuild | Machinery Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+  <!-- Navbar -->
+  <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50 transition">
+    <div class="container mx-auto flex justify-between items-center px-4 py-4">
+      <h1 class="text-2xl font-bold text-blue-700 dark:text-blue-400">MultiBuild</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600">Home</a>
+        <a href="#about" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600">About</a>
+        <a href="#products" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600">Products</a>
+        <a href="#contact" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600">Contact</a>
+      </nav>
+      <button id="themeToggle" class="ml-4 text-xl text-gray-600 dark:text-gray-300 hover:text-blue-600">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="bg-blue-50 dark:bg-gray-800 py-20 text-center" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-4">Innovative Machinery Solutions</h2>
+    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
+      Empowering industries with state-of-the-art construction machinery and engineering innovation.
+    </p>
+    <a href="#products" class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Explore Products</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 bg-white dark:bg-gray-900 transition" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-blue-700 dark:text-blue-400 mb-6">About Us</h3>
+      <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+        MultiBuild is a leader in industrial innovation, providing powerful and reliable construction machinery worldwide.
+        Our mission is to revolutionize the construction landscape by combining performance, safety, and sustainability.
+      </p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-20 px-6 bg-gray-50 dark:bg-gray-800 transition">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-center text-blue-700 dark:text-blue-400 mb-12">Our Products</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Product Cards -->
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-xl transition" data-aos="fade-up">
+          <img src="https://images.unsplash.com/photo-1606227290125-1c9b2f989c7a" class="w-full h-48 object-cover rounded mb-4" alt="Hydraulic Excavator">
+          <h4 class="text-xl font-semibold mb-2">Hydraulic Excavator</h4>
+          <p class="text-gray-600 dark:text-gray-300">Tough terrain? No problem. Fuel efficient and powerful.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1581092917453-1d6ef826e5b3" class="w-full h-48 object-cover rounded mb-4" alt="Concrete Mixer">
+          <h4 class="text-xl font-semibold mb-2">Concrete Mixer</h4>
+          <p class="text-gray-600 dark:text-gray-300">Consistent mixing, time after time. Built for efficiency.</p>
+        </div>
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6" class="w-full h-48 object-cover rounded mb-4" alt="Tower Crane">
+          <h4 class="text-xl font-semibold mb-2">Tower Crane</h4>
+          <p class="text-gray-600 dark:text-gray-300">Smart lifting systems for maximum safety & accuracy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 bg-white dark:bg-gray-900 transition" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="text-3xl font-bold text-blue-700 dark:text-blue-400 mb-6">Contact Us</h3>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">
+          Have questions or need a tailored solution? Reach out to our support team.
+        </p>
+        <form class="space-y-4">
+          <div class="flex items-center border rounded px-4 py-2 dark:border-gray-600">
+            <i class="fas fa-user text-blue-600 mr-3"></i>
+            <input type="text" placeholder="Your Name" class="w-full bg-transparent outline-none text-gray-800 dark:text-gray-200" required />
+          </div>
+          <div class="flex items-center border rounded px-4 py-2 dark:border-gray-600">
+            <i class="fas fa-envelope text-blue-600 mr-3"></i>
+            <input type="email" placeholder="Your Email" class="w-full bg-transparent outline-none text-gray-800 dark:text-gray-200" required />
+          </div>
+          <div class="flex border rounded px-4 py-2 dark:border-gray-600">
+            <i class="fas fa-comment-dots text-blue-600 mr-3 mt-2"></i>
+            <textarea rows="4" placeholder="Your Message" class="w-full bg-transparent outline-none text-gray-800 dark:text-gray-200 resize-none" required></textarea>
+          </div>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition w-full">Send Message</button>
+        </form>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <iframe 
+          class="w-full h-full min-h-[400px]" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3426.165710776746!2d74.81263557530283!3d32.726601373664955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e84fc3c1fbf71%3A0xa0e6ef1ccf0d7b25!2sMIET%20Jammu!5e0!3m2!1sen!2sin!4v1712730949202" 
+          allowfullscreen="" 
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center text-gray-600 dark:text-gray-400">
+    <p>&copy; 2025 MultiBuild. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.getElementById("themeToggle").addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+    });
+  </script>
+
+</body>
+</html>
